@@ -55,3 +55,5 @@ There were certain things I liked from both Ahmad Awais and Ali Alaa's Gulp setu
 - Added browserlist in `package.json` for Autoprefixer – per my project needs
 - Directory setup – I preferred Ahmad's decision to place zip in parent directory but preferred Ali's general theme folder structure (with /src /dist)
 - JS bundling – I like to enqueue scripts separately per page, so I used Ali's method of using `vinyl-named` to bundle multiple script files
+
+I've only done some basic tests so I assume there'll be things that can be improved!
