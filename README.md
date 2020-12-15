@@ -4,7 +4,7 @@ My personal Gulp configuration for WordPress theme development.
 This configuration is heavily inspired by [WPGulp](https://github.com/ahmadawais/WPGulp) by Ahmad Awais and [this guide on CSS-Tricks](https://css-tricks.com/gulp-for-wordpress-initial-setup/) by Ali Alaa. Many thanks to them for sharing their work!
 
 ## Installation Guide
-1. Initialize npm 
+1. Initialize npm in theme root directory
 `npm init`
 
 2. Install Gulp 
