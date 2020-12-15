@@ -1,0 +1,42 @@
+{
+  "name": "custom-wpgulp",
+  "version": "1.0.0",
+  "description": "Custom Gulp configuration for WordPress theme development ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junction43/custom-wpgulp.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Gulp"
+  ],
+  "author": "Nina Pang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junction43/custom-wpgulp/issues"
+  },
+  "homepage": "https://github.com/junction43/custom-wpgulp#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-zip": "^5.0.2",
+    "postcss": "^8.2.1",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^6.1.1"
+  },
+  "browserslist": [
+    "defaults",
+    "cover 99.5% in US",
+    "cover 99.5% in GB"
+  ]
+}
