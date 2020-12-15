@@ -30,7 +30,6 @@ var zip = require('gulp-zip');
  * Task: `styles` 
  * Compiles Sass, Autoprefixes, Minifies CSS
  * 
- * Note: Use `npm install -D postcss` to fix error: `PostCSS plugin autoprefixer requires PostCSS 8. Update PostCSS or downgrade this plugin`
  */
 gulp.task('styles', function() {
     return gulp.src(['src/css/*.scss'])
