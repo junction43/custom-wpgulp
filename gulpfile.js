@@ -106,6 +106,8 @@ gulp.task('zip', function() {
             "!.gitignore",
             "!package.json",
             "!package-lock.json",
+            "!gulpfile.js",
+            "!composer.json"
         ])
         .pipe(zip(`${themeName}.zip`))
         .pipe(gulp.dest('./../'));
