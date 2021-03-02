@@ -103,9 +103,7 @@ gulp.task('zip', function() {
             "!node_modules{,/**}",
             "!bundled{,/**}",
             "!src{,/**}",
-            "!.babelrc",
             "!.gitignore",
-            "!gulpfile.babel.js",
             "!package.json",
             "!package-lock.json",
         ])
