@@ -32,7 +32,7 @@ This configuration is heavily inspired by [WPGulp](https://github.com/ahmadawais
 ### Default
 `gulp`
 
-- (`gulp clear`) Clear all files in `dist` folder
+- (`gulp clear`) Clear all files in `dist` folder (ensures old files are removed)
 - (`gulp styles`) Compile Sass, Autoprefixe, Minify CSS
 - (`gulp images`) Minify PNG, JPEG, GIF and SVG images
 - (`gulp scripts`) Concatenate and minify scripts
@@ -41,7 +41,7 @@ This configuration is heavily inspired by [WPGulp](https://github.com/ahmadawais
 ### Build
 `gulp build`
 
-- (`gulp clear`) Clear all files in `dist` folder
+- (`gulp clear`) Clear all files in `dist` folder (ensures old files are removed)
 - (`gulp styles`) Compile Sass, Autoprefixe, Minify CSS
 - (`gulp images`) Minify PNG, JPEG, GIF and SVG images
 - (`gulp scripts`) Concatenate and minify scripts
