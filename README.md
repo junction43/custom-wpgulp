@@ -27,6 +27,13 @@ This configuration is heavily inspired by [WPGulp](https://github.com/ahmadawais
 - Update `themeName`
 - Use `copy` as a template to copy other files (e.g. fonts)
 
+## File Structure
+I've uploaded a starter theme from [Underscores](https://underscores.me/) to demo the file structure of a WordPress theme that contains the Gulp configuration.
+
+My file structure is very similar to the CSS-Tricks guide mentioned above, with a src for working files and dist folder for final, minified files. The src folder will be excluded from the zip folder produced by the `gulp build` or `gulp zip` task.
+
+Note that the file source for scripts, styles, and images etc. should point to the dist folder (not src). You can see an example in `functions.php`.
+
 ## Gulp Tasks 
 
 ### Default
@@ -36,7 +43,7 @@ This configuration is heavily inspired by [WPGulp](https://github.com/ahmadawais
 - (`gulp styles`) Compile Sass, Autoprefixe, Minify CSS
 - (`gulp images`) Minify PNG, JPEG, GIF and SVG images
 - (`gulp scripts`) Concatenate and minify scripts
-- (`gulp watch`)Watch files for changes
+- (`gulp watch`) Watch files for changes
 
 ### Build
 `gulp build`
