@@ -5,23 +5,25 @@ This configuration is heavily inspired by [WPGulp](https://github.com/ahmadawais
 
 ## Installation Guide
 1. Initialize npm in theme root directory
-`npm init`
+- `npm init`
 
 2. Install Gulp 
-`npm install --save-dev gulp`
+- `npm install --save-dev gulp`
 
 3. Install style-related dependencies 
-`npm install --save-dev gulp-sass gulp-postcss gulp-clean-css autoprefixer` 
-`npm install -D postcss`
+- `npm install --save-dev gulp-sass gulp-postcss gulp-clean-css autoprefixer` 
+- `npm install -D postcss`
 
 4. Install image-related dependencies
-`npm install --save-dev gulp-imagemin`
+- `npm install --save-dev gulp-imagemin`
+- NOTE: gulp-imagemin package has been converted to be an ESM only package in version 8.0.0. To use `require()`, install `gulp-imagemin@7.1.0`
 
 5. Install script-related dependencies
-`npm install --save-dev webpack-stream vinyl-named`
+- `npm install --save-dev webpack-stream vinyl-named`
 
 6. Install utility dependencies
-`npm install --save-dev gulp-sourcemaps del gulp-zip`
+- `npm install --save-dev gulp-sourcemaps del gulp-zip`
+- NOTE: del package has been converted to be an ESM only package. To use `require()`, install `del@6.0.0`
 
 7. Customize **gulpfile.js** as needed
 - Update `themeName`
