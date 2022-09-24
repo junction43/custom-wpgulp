@@ -1,5 +1,5 @@
 // Theme Name
-var themeName = "_mytheme";
+var themeName = "_my-theme";
 
 /**
  * Load Plugins
@@ -9,7 +9,7 @@ var themeName = "_mytheme";
 var gulp = require('gulp');
 
 // style plugins
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var postcss = require('gulp-postcss');
 var cleanCSS = require("gulp-clean-css"); 
 var autoprefixer = require('autoprefixer');
@@ -114,14 +114,14 @@ gulp.task('zip', function() {
  })
 
  /**
- * Task: `copy` 
+ * Task: `fonts` 
  * USE AS TEMPLATE: Copies other `src` files into `dist`
  * 
  */
-// gulp.task('copy', function() {
-//     return gulp.src(['src/**/*','!src/{images,js,scss}','!src/{images,js,scss}/**/*'])
-//        .pipe(gulp.dest('dist'))
-// })
+gulp.task('fonts', function() {
+    return gulp.src(['src/fonts/*'])
+       .pipe(gulp.dest('dist/fonts'))
+})
 
   /**
  * Task: `watch` 
@@ -134,7 +134,7 @@ gulp.task('zip', function() {
         'src/css/**/*.scss', 
         gulp.series('styles'));
     gulp.watch(
-        'src/images/**/*.{jpg,jpeg,png,svg,gif}', 
+        'src/img/**/*.{jpg,jpeg,png,svg,gif}', 
         gulp.series('images'))
     gulp.watch(
         'src/js/**/*.js', 
@@ -145,8 +145,4 @@ gulp.task('zip', function() {
  * Main Commands
  * 
  */
- gulp.task('default', gulp.series('clean', 'styles', 'images', 'scripts', 'watch'))
-
- gulp.task('build', gulp.series('clean', 'styles', 'images', 'scripts', 'zip'))
-
- 
+ gulp.task('default', gulp.series('fonts', 'styles', 'images', 'scripts', 'watch'))
